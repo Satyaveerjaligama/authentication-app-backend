@@ -11,7 +11,7 @@ router.post(
   validateRequestBody(userRegistrationValidation),
   register
 );
-router.post("/test", authMiddleware, (req, res) => {
+router.get("/test", authMiddleware, (req, res) => {
   res.status(200).json({ message: "test api" });
 });
 
